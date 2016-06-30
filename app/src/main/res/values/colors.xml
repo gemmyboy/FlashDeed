@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="BG_Primary">#804000</color>
-    <color name="BG_Secondary">#4D2600</color>
-    <color name="Green_Core">#009F0E</color>
-</resources>
