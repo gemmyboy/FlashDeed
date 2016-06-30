@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gemmyboy.flashdeed.LoginScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"
+        android:alpha="0.05"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/text_field_username"
+        android:layout_marginTop="100dp"
+        android:hint="Username"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignEnd="@+id/button_register"
+        android:theme="@style/Base.Theme.AppCompat" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/text_field_password"
+        android:layout_below="@+id/text_field_username"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:theme="@style/Base.Theme.AppCompat" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button_login"
+        android:theme="@style/Base.Theme.AppCompat"
+        android:layout_alignTop="@+id/button_register"
+        android:layout_alignStart="@+id/text_field_password"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/button_register"
+        android:theme="@style/Base.Theme.AppCompat"
+        android:layout_below="@+id/text_field_password"
+        android:layout_alignEnd="@+id/text_field_password"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_fd_letter_full"
+        android:layout_marginBottom="475dp" />
+</RelativeLayout>

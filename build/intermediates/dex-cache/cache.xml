@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\mshannon\Desktop\FlashDeed\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0277ec2b4bb64c829c2825fd8107666b45cbb1b4">
+        <dex dex="C:\Users\mshannon\Desktop\FlashDeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_2b099f662cce24cb83ff86ee53de93e5621f24fd\classes.dex" />
+    </item>
+
+</items>
