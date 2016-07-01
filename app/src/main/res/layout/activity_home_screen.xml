@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="gemmyboy.flashdeed.HomeScreen">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_home"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:title=""
+                android:elevation="4dp"
+                android:theme="@style/ToolbarTheme" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/stats_display"
+                android:layout_below="@+id/toolbar_home"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/Off_White"
+                android:alpha="0.4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="42 Minutes"
+                android:id="@+id/dynamic_time"
+                android:layout_alignTop="@+id/stats_display"
+                android:layout_alignStart="@+id/stats_display"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="14 Deeds"
+                android:id="@+id/dynamic_deeds"
+                android:layout_marginEnd="63dp"
+                android:layout_alignTop="@+id/stats_display"
+                android:layout_alignEnd="@+id/stats_display"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/static_time"
+                android:src="@drawable/ic_access_time_white_48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBottom="@+id/dynamic_time"
+                android:layout_alignStart="@+id/stats_display"
+                android:layout_marginBottom="-2dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/static_deeds"
+                android:src="@drawable/ic_group_work_white_48dp"
+                android:layout_alignBottom="@+id/dynamic_deeds"
+                android:layout_toStartOf="@+id/dynamic_deeds"
+                android:layout_marginBottom="-2dp"
+                android:layout_marginRight="10dp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listView"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/stats_display"
+                android:layout_marginTop="0dp"
+                android:layout_margin="10dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="List of currently subscribed events or something else"
+                android:id="@+id/textView"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/Off_White"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+    </FrameLayout>
+    <!-- The navigation drawer -->
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111"/>
+</android.support.v4.widget.DrawerLayout>

@@ -8,6 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorBackground">@color/BG_Secondary</item>
     </style>
+
     <style name="LoadTheme" parent="Theme.AppCompat.NoActionBar"></style>
 
+    <style name="ToolbarTheme">
+        <item name="android:colorBackground">@color/BG_Primary</item>
+        <item name="android:textColorPrimary">@color/Off_White</item>
+        <item name="android:actionMenuTextColor">@color/Off_White</item>
+    </style>
 </resources>

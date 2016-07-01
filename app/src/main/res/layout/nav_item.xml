@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:textColor="@color/Off_White"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:padding="10dp"
+    android:theme="@style/Base.Theme.AppCompat"
+    android:textSize="15dp"
+    android:onClick="OnClick_NavMenu"
+    android:textAlignment="center" />

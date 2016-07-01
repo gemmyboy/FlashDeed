@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">FlashDeed</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="test_cred">admin</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Log out</string>
+    <string-array name="left_nav_menu">
+        <item>Profile</item>
+        <item>Store</item>
+        <item>Map</item>
+        <item>...</item>
+    </string-array>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
 </resources>

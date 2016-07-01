@@ -28,7 +28,8 @@
         android:hint="Username"
         android:layout_alignTop="@+id/imageView2"
         android:layout_alignEnd="@+id/button_register"
-        android:theme="@style/Base.Theme.AppCompat" />
+        android:theme="@style/Base.Theme.AppCompat"
+        android:text="@string/test_cred" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -39,32 +40,35 @@
         android:layout_below="@+id/text_field_username"
         android:layout_centerHorizontal="true"
         android:hint="Password"
-        android:theme="@style/Base.Theme.AppCompat" />
+        android:theme="@style/Base.Theme.AppCompat"
+        android:text="@string/test_cred" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="@string/login"
         android:id="@+id/button_login"
         android:theme="@style/Base.Theme.AppCompat"
         android:layout_alignTop="@+id/button_register"
         android:layout_alignStart="@+id/text_field_password"
-        android:layout_marginTop="0dp" />
+        android:layout_marginTop="0dp"
+        android:onClick="OnClick_Login" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="@string/register"
         android:id="@+id/button_register"
         android:theme="@style/Base.Theme.AppCompat"
         android:layout_below="@+id/text_field_password"
         android:layout_alignEnd="@+id/text_field_password"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:onClick="OnClick_Register" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/imageView3"
+        android:id="@+id/image_logo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:src="@drawable/logo_fd_letter_full"

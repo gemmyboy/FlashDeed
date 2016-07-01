@@ -5,5 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="BG_Primary">#804000</color>
     <color name="BG_Secondary">#4D2600</color>
-    <color name="Green_Core">#009F0E</color>
+    <color name="Green_Core">#009f0e</color>
+    <color name="Off_White">#dddddd</color>
 </resources>
