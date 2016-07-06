@@ -8,8 +8,11 @@
     <string-array name="left_nav_menu">
         <item>Profile</item>
         <item>Store</item>
-        <item>Map</item>
-        <item>...</item>
+        <item>About Us</item>
+        <item>Mission</item>
+        <item>Contact</item>
+        <item>FAQ</item>
+        <item>Manage Account</item>
     </string-array>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>

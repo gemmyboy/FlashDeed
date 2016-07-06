@@ -1,6 +1,7 @@
 package gemmyboy.flashdeed;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -22,6 +23,7 @@ public class HomeScreen extends AppCompatActivity {
     private ListView mLV;
     private String[] mOptions;
     private ActionBarDrawerToggle mDT;
+    public static final String PREFS_NAME = "FlashDeed_PREFS";
 
 
     //----------------------------------------------------------------------------------------------
@@ -111,6 +113,11 @@ public class HomeScreen extends AppCompatActivity {
                 Toast.makeText(HomeScreen.this, "Settings Dialog: Not Implemented", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.menu_logout:
+                SharedPreferences.Editor e = this.getSharedPreferences(PREFS_NAME, 0).edit();
+                e.remove("Username");
+                e.remove("Password");
+                e.commit();
+
                 Intent in = new Intent(getApplicationContext(), LoginScreen.class);
                 startActivity(in);
                 finish();

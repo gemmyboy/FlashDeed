@@ -2,6 +2,7 @@ package gemmyboy.flashdeed;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginScreen extends AppCompatActivity {
-
+    public static final String PREFS_NAME = "FlashDeed_PREFS";
 
     //----------------------------------------------------------------------------------------------
     //Standard Life Cycle Functions that are called depending on where the flow
@@ -65,6 +66,11 @@ public class LoginScreen extends AppCompatActivity {
 
         //Basic login cred until backend system and DB are setup.
         if (username.equalsIgnoreCase(admin) && password.equalsIgnoreCase(admin)) {
+            SharedPreferences.Editor e = this.getSharedPreferences(PREFS_NAME, 0).edit();
+            e.putString("Username", username);
+            e.putString("Password", password);
+            e.commit();
+
             Intent in = new Intent(this, HomeScreen.class);
             startActivity(in);
         } else {

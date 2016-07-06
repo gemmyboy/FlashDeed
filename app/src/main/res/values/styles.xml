@@ -3,16 +3,22 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/BG_Primary</item>
-        <item name="colorPrimaryDark">@color/BG_Secondary</item>
+        <item name="colorPrimary">@color/LSU_Gold</item>
+        <item name="colorPrimaryDark">@color/Crimson_Red</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:colorBackground">@color/BG_Secondary</item>
+        <item name="android:colorBackground">@color/Crimson_Red</item>
     </style>
 
-    <style name="LoadTheme" parent="Theme.AppCompat.NoActionBar"></style>
+    <style name="LoadTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/LSU_Gold</item>
+        <item name="colorPrimaryDark">@color/Crimson_Red</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/Crimson_Red</item>
+    </style>
 
     <style name="ToolbarTheme">
-        <item name="android:colorBackground">@color/BG_Primary</item>
+        <item name="android:colorBackground">@color/Crimson_Red</item>
         <item name="android:textColorPrimary">@color/Off_White</item>
         <item name="android:actionMenuTextColor">@color/Off_White</item>
     </style>
